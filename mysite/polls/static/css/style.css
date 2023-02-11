@@ -1,0 +1,63 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+body{
+    height: 1000px;
+}
+#Principal{
+    display: inline-flex;
+    height: 50px;
+    padding-top: 15px;
+    width: 100%;
+}
+#PrincipalNav{
+    display: inline-flex;
+    height: 50px;
+    width: 65%;
+    margin-left: 5%;
+    
+    color: black;
+}
+#PrincipalNav ul{
+    width: 100%;
+}
+
+#PrincipalNav li{
+    width: 25%;
+    margin: auto;
+    
+}
+#log {
+    width: 30%;
+    display: inline-flex;
+}
+#log li{
+    margin: auto;
+    color:red;
+    font-size: 15px;
+}
+#MainSection{
+    width: 100%;
+    display: inline-flex;
+    margin-top: 20px;
+}
+#Catalogo{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Product{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+#Reviews{
+    width: 15%;
+    display: inline-block;
+}
+#Reviews p{
+    padding-top: 20px;
+}
