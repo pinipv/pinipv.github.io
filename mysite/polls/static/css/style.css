@@ -85,24 +85,23 @@ body{
 }
 
 .Carrousel{
-    width: 90%;
+    width: 50%;
     max-width: 120em;
     background-color: lightskyblue;
     overflow: hidden;
 }
 .Carrousel .Big{
-    width: 200%;
+    width: 100%;
     background-color: orange;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-
     transition: all .5s ease;
     
 }
 .Carrousel .img{
-    width: calc(40% /2) ;
+    width: calc(100% /2);
     height: 300px;
     
 }
@@ -119,7 +118,7 @@ body{
 .Carrousel .punto{
     width: 2em;
     height: 1em;
-    background-color:blue ;
+    background-color:blue;
     margin: 1em;
 }
 .Carrousel .punto .activo{
