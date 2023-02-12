@@ -21,7 +21,9 @@ body{
 #Company{
     display: inline-flex;
     height: 50px;
+    width: 15%;
     margin: auto;
+    
 
 }
 #Company li{
@@ -61,19 +63,26 @@ body{
     font-size: 15px;
 }
 #MainSection{
-    width: 100%;
+    width: 80%;
     display: inline-flex;
     margin-top: 20px;
+    margin-left: 10%;
 }
 #Catalogo{
     width: 85%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; 
+    grid-auto-rows :minmax(100px,auto); 
+    grid-auto-columns :minmax(100px,auto); 
+    
 }
 #Product{
     border: 1px solid black;
+    height: 10em;
     border-radius: 10px;
     margin: auto;
+    margin-top: 3em;
     padding: 10px;
 }
 #Reviews{
@@ -85,29 +94,37 @@ body{
 }
 
 .Carrousel{
-    width: 50%;
+    width: 80%;
+    margin-left: 10%;
     max-width: 120em;
-    background-color: lightskyblue;
+    border: 1px solid black;
+    border-radius: 12px;
     overflow: hidden;
+    justify-content: center;
+
 }
 .Carrousel .Big{
-    width: 100%;
-    background-color: orange;
+    width: 200%;
+    height: 25vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     transition: all .5s ease;
+    transform: translateX(-28.25%);
     
 }
 .Carrousel .img{
-    width: calc(100% /2);
-    height: 300px;
+    border-radius: 14px;
+    width: calc(10% /2);
+    width: 15vh;
+    height: 20vh;
+    
     
 }
 .Carrousel .puntos{
     width: 100%;
-    background-color: red;
+    background-color: rgb(217, 217, 217);
     padding: 1em;
     display: flex;
     flex-flow: row nowrap;
@@ -118,9 +135,8 @@ body{
 .Carrousel .punto{
     width: 2em;
     height: 1em;
-    background-color:blue;
     margin: 1em;
 }
-.Carrousel .punto .activo{
-    background-color: orange;
+.Carrousel .activo{
+    color: rgb(255, 0, 0);
 }
