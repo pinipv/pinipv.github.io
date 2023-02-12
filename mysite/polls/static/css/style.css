@@ -5,6 +5,7 @@
 }
 body{
     height: 1000px;
+    overflow: hidden;
 }
 #Header{
     width: 100%;
