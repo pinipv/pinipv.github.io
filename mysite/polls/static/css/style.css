@@ -6,35 +6,56 @@
 body{
     height: 1000px;
 }
+#Header{
+    width: 100%;
+}
 #Principal{
-    display: inline-flex;
+    display: flex;
     height: 50px;
     padding-top: 15px;
-    width: 100%;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+#Company{
+    display: inline-flex;
+    height: 50px;
+    margin: auto;
+
+}
+#Company li{
+    margin: auto;
 }
 #PrincipalNav{
     display: inline-flex;
     height: 50px;
     width: 65%;
-    margin-left: 5%;
-    
+    margin: auto 20px;
     color: black;
 }
-#PrincipalNav ul{
-    width: 100%;
-}
-
 #PrincipalNav li{
     width: 25%;
     margin: auto;
     
 }
-#log {
-    width: 30%;
+
+#Process{
     display: inline-flex;
+    height: 50px;
+    width: 15%;
+    margin: auto;
+}
+#Process li{
+    margin: auto;
+    
+}
+#log {
+    width: 100%;
+    display: inline-flex;
+    justify-content: end;
 }
 #log li{
-    margin: auto;
+    width: 10%;
     color:red;
     font-size: 15px;
 }
@@ -60,4 +81,45 @@ body{
 }
 #Reviews p{
     padding-top: 20px;
+}
+
+.Carrousel{
+    width: 90%;
+    max-width: 120em;
+    background-color: lightskyblue;
+}
+.Carrousel .Big{
+    width: 200%;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all .5s ease;
+    
+}
+.Carrousel .img{
+    width: calc(40% /2) ;
+    height: 300px;
+    
+}
+.Carrousel .puntos{
+    width: 100%;
+    background-color: red;
+    padding: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Carrousel .punto{
+    width: 2em;
+    height: 1em;
+    background-color:blue ;
+    margin: 1em;
+}
+.Carrousel .punto .activo{
+    background-color: orange;
 }
