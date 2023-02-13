@@ -84,6 +84,7 @@ body{
     margin: auto;
     margin-top: 3em;
     padding: 10px;
+    box-shadow: 10px -10px rgba(0, 0, 0, 0.118);
 }
 #Reviews{
     width: 15%;
