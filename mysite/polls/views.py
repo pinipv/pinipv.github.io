@@ -13,6 +13,9 @@ from django.views import generic
 from django.utils import timezone
 
 
+from pymongo import MongoClient
+
+
 
 
 class IndexView(generic.ListView):
@@ -23,7 +26,12 @@ class IndexView(generic.ListView):
         
         return Product.objects.all()
         
-
+class PruebaView(generic.ListView):
+    template_name = 'polls/prueba.html'
+    context_object_name = 'prubas_list'
+    
+    def get_queryset(self):
+        return 1
 
 class DetailView(generic.DetailView):
     model = Question
@@ -41,3 +49,16 @@ class ResultsView(generic.DetailView):
 
 def vote(request, question_id):
     ... # same as above, no changes needed.
+def sumar(numero):
+    return numero+2
+    
+def Prueba(request):
+#    template = loader.get_template('polls/prueba.html')
+    string="mongodb+srv://adri_pv:qazxswedc21324354@easy.yvxgjtg.mongodb.net/?retryWrites=true&w=majority"
+    client = MongoClient(string)
+    dbname = client.easy_db
+    tabla = dbname.easy_t
+    datos = tabla.find({})
+    
+    context = datos
+    return render(request, 'polls/prueba.html', {'datos':context})
